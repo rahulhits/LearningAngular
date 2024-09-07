@@ -3,3 +3,56 @@ var username:string ="John";
 console.log("Hello ! "+username);
 
 ---------------
+function Demo()
+{
+    var x;
+    x=10;
+    if(x==10)
+    {
+        var y=20;
+    }
+    console.log("x"+x+"\n"+"Y"+y);
+}
+// Demo();
+
+function varHoisting()
+{
+    a=10;
+    console.log("x="+a)
+    var a;
+}
+varHoisting();
+-----------------
+
+var username:string="John";
+var age:number=23;
+var msg1:string="Hello !"+" "+"username"+" "+"you will be"+ " "+(age+1)+" "+"Next Year";
+var msg2:string=`Hello ! ${username} you wull be ${age+1} next Year`;
+console.log(msg1);
+console.log(msg2);
+-----------------
+var mobile:string="+907597080173";
+if(mobile.match(/\+91\d{10}/)){
+    console.log("OTP Sent");
+}
+else{
+    console.log("Invalid Mobile");
+}
+----------------------------
+var mobile:string="+(44)(30)  2242 5454";
+if(mobile.match(/\+\(44\([0-9]{2}\)\s[0-9]{4}\s[0-9]{4}/)){
+    console.log("OTP Sent");
+}
+else{
+    console.log("Invalid Mobile");
+}
+-------------------------
+var Name:string="Samsung";
+var Price:Number|undefined;
+Price=123;
+if (Price){
+    console.log(`Name=${Name}\n Price=${Price}`); 
+}else
+{
+    console.log(`Name=${Name}`)
+}
