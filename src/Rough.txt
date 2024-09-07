@@ -1,0 +1,5 @@
+var username:string ="John";
+//document.write("Hello ! "+username);
+console.log("Hello ! "+username);
+
+---------------
