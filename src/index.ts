@@ -1,14 +1,11 @@
-class Product
+
+
+let product:{Name:String, Price:number}={
+    Name:"TV",
+    Price:45000.44
+};
+
+for (var property in product)
 {
-    public Name:string="TV";
-    public Price:number=45.000;
-    public Qty:number=2
-    public Total():number{
-        return this.Qty * this.Price;
-    }
-    public Print():void{
-        console.log(`Name${this.Name}\nPrice=${this.Price}\nQty=${this.Qty}`);
-            }
+    console.log(property)
 }
-let obj=new Product();
-obj.Print();
